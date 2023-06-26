@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #7d9124;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			font-size: 36px;
+			margin-top: 0;
+		}
+		.container {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid #0daddd;
+			box-shadow: 0 0 10px #5a0645;
+		}
+		input[type="text"],
+		input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #30b60e;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+		button[type="submit"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			background-color: #333;
+			color: #0ac08a;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		button[type="submit"]:hover {
+			background-color: #555;
+		}
+		.social-login {
+			margin-top: 20px;
+			text-align: center;
+		}
+		.social-login a {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin-right: 10px;
+			border-radius: 50%;
+			background-color: #43f3aa;
+			color: #333;
+			text-align: center;
+			line-height: 50px;
+			font-size: 24px;
+			text-decoration: none;
+		}
+		.social-login a:hover {
+			background-color: #333;
+			color: #0f3dd4;
+		}
+	</style>
+</head>
+<body>
+	<header>
+    
+		<h1>Login Page</h1>
+	</header>
+	<div class="container">
+		<form>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit">Login
+                
+            </button>
+		</form>
+		<div class="social-login">
+        
+			<a href="#"><i class="fab fa-facebook-f"> </i>   <img src="img/facebook.svg" alt="Logo">
+                </a>
+
+			<a href="#"><i class="fab fa-twitter"></i> <img src="img/google.svg" alt="Logo"></a>
+			<a href="#"><i class="fab fa-google"></i></a>
+            </div>
+            <li><a href="regester.html">Register</a>
+            </li>
+		</div>
+	</div>
+</body>
+</html>

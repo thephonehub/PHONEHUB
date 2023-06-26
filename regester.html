@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <style>
+      /* Form container */
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f7f7f7;
+      }
+      
+      /* Form header */
+      .form-header {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #333;
+        text-align: center;
+        animation: slide-top 1s ease-out;
+      }
+      
+      /* Form input fields */
+      .form-input {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem;
+        box-shadow: 0px 0px 10px rgba(15, 51, 255, 0.1);
+        transition: box-shadow 2s ease-in-out;
+        font-size: 1rem;
+      }
+      
+      /* Form input fields focus */
+      .form-input:focus {
+        outline: none;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      }
+      
+      /* Submit button */
+      .submit-btn {
+        background-color: #3e8e41;
+        color: #fff;
+        border: hotpink;
+        border-radius: 0.5rem;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        animation: slide-bottom 1s ease-in;
+      }
+      
+      /* Submit button hover */
+      .submit-btn:hover {
+        background-color: #539996;
+      }
+      
+      /* Form animations */
+      @keyframes slide-top {
+        from {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes slide-bottom {
+        from {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="form-container">
+      <h1 class="form-header">Register</h1>
+      <form>
+        <input class="form-input" type="text" placeholder="Name">
+        <input class="form-input" type="email" placeholder="Email">
+        <input class="form-input" type="password" placeholder="Password">
+        <button class="submit-btn" type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
