@@ -15,72 +15,9 @@
 	
 	  </head>
 
-	<nav>
-		<!DOCTYPE html>
-<html>
-<head>
-    <title>Beautiful Sidebar Menu</title>
-    <style>
-        /* Sidebar styling */
-        body { margin: 0; }
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: -250px;
-            width: 250px;
-            height: 100%;
-            background-color: #333;
-            color: #fff;
-            padding: 0px;
-            transition: left 0.3s;
-        }
-        .sidebar.show {
-            left: 0;
-        }
-        .sidebar a {
-            display: block;
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-        }
-        .sidebar a:hover {
-            background-color: #555;
-        }
-        .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 24px;
-            color: #fff;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <div class="sidebar" id="mySidebar">
-        <span class="close-btn" onclick="closeSidebar()">&times;</span>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </div>
-    <!-- Add the main content here -->
-    <button onclick="openSidebar()">=</button>
-
-    <script>
-        function openSidebar() {
-            document.getElementById("mySidebar").classList.add("show");
-        }
-
-        function closeSidebar() {
-            document.getElementById("mySidebar").classList.remove("show");
-        }
-    </script>
-</body>
-</html>
-
-	</nav>
-
+	
+		
+	
 
 	
 
@@ -145,7 +82,70 @@
 
 
 			
-		<nav>	
+		<nav>
+			<!DOCTYPE html>
+<html>
+<head>
+    <title>Beautiful Sidebar Menu</title>
+    <style>
+        /* Sidebar styling */
+        body { margin: 0; }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 0px;
+            transition: left 0.3s;
+        }
+        .sidebar.show {
+            left: 0;
+        }
+        .sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .sidebar a:hover {
+            background-color: #555;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar" id="mySidebar">
+        <span class="close-btn" onclick="closeSidebar()">&times;</span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+    <!-- Add the main content here -->
+    <button onclick="openSidebar()">=</button>
+
+    <script>
+        function openSidebar() {
+            document.getElementById("mySidebar").classList.add("show");
+        }
+
+        function closeSidebar() {
+            document.getElementById("mySidebar").classList.remove("show");
+        }
+    </script>
+</body>
+</html>
+
 				<li><a href="#">Products</a> 
 				
 					<label for="product"></label>
