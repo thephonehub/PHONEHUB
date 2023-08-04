@@ -49,7 +49,7 @@ nav {
   a {
     color: #f9feff;
     font-family: Arial, sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     text-decoration: none;
     text-transform: capitalize;
@@ -97,8 +97,8 @@ nav a:hover {
 }
 
 .products h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
 
 .products ul {
