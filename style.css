@@ -22,10 +22,10 @@ header {
 
 nav {
     background-color: #f2f2f2;
-    border-radius: 45px;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
-    padding: 35px;
+    padding: 40px;
   }
 
 
@@ -67,7 +67,7 @@ nav ul {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 40;
+    padding: 35;
 }
 
 nav li {
