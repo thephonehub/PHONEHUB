@@ -110,7 +110,7 @@ nav a:hover {
 }
 
 .products li {
-    background-color: #f7f8f7;
+    background-color: #29ab87;
     border-radius: 5px;
     flex-basis: calc(33.33% - 20px);
     padding: 20px;
