@@ -392,6 +392,92 @@
 
 			  </a>
 			  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 0;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: #0a7a6b;
+    overflow-y: hidden;
+    transition: 0.3s;
+  }
+
+  .sidebar.open {
+    height: 50%;
+    top: 5px;
+   
+  }
+
+  .sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(250, 250, 250);
+    display: block;
+    transition: 0.5s;
+    text-align: center
+  }
+
+  .sidebar a:hover {
+    color: #00dbd0;
+  }
+
+  .openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+
+
+
+    
+  
+
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</div>
+
+<span class="openbtn" onclick="openNav()">&#9776; </span>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").classList.add("open");
+  
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").classList.remove("open") ;
+  
+}
+</script>
+
+</body>
+</html>
 
 			
 		  </body>
