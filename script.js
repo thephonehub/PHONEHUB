@@ -1,22 +1,19 @@
-const toggleSwitch = document.getElementById('dark-mode-toggle');
-const body = document.body;
+// script.js
 
-if (localStorage.getItem('darkMode') === 'enabled') {
-  toggleSwitch.checked = true;
-  body.classList.add('dark-mode');
-}
+document.addEventListener('DOMContentLoaded', function() {
+  const productCards = document.querySelectorAll('.products li');
 
-toggleSwitch.addEventListener('change', function(event) {
-  if (event.target.checked) {
-    body.classList.add('dark-mode');
-    localStorage.setItem('darkMode', 'enabled');
-  } else {
-    body.classList.remove('dark-mode');
-    localStorage.setItem('darkMode', null);
-  }
+  productCards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+      card.style.transform = 'translateY(-5px) scale(1.02)';
+      card.style.boxShadow = '0 6px 10px rgba(0, 0, 0, 0.1)';
+    });
+
+    card.addEventListener('mouseout', () => {
+      card.style.transform = 'translateY(0) scale(1)';
+      card.style.boxShadow = 'none';
+    });
+  });
 });
-
-
-}
 
 
