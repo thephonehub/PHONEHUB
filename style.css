@@ -93,12 +93,12 @@ nav a:hover {
 }
 
 .products {
-    margin: 15px 0;
+    margin: 25px 0;
 }
 
 .products h2 {
-    font-size: 15px;
-    margin-bottom: 15px;
+    font-size: 25px;
+    margin-bottom: 25px;
 }
 
 .products ul {
@@ -111,7 +111,7 @@ nav a:hover {
 
 .products li {
     background-color: #29ab87;
-    border-radius: 5px;
+    border-radius: 25px;
     flex-basis: calc(33.33% - 20px);
     padding: 20px;
 }
@@ -123,12 +123,12 @@ nav a:hover {
 }
 
 .products h3 {
-    font-size: 18px;
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
 .products p {
-    font-size: 16px;
+    font-size: 26px;
     margin-bottom: 20px;
 }
 
