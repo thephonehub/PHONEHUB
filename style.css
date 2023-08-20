@@ -360,6 +360,12 @@ header {
 
 
 
+body {
+  background-image: url("background-image.jpg"); /* Replace with your image URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+}
 
 
 
